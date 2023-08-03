@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'REM', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(35deg, #007dff, #000000);
+}
+
+.quote-box {
+    background-color: #FFFFFF;
+    width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 10px 20px #000000;
+}
+
+.quote-box h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.quote-box h2::after {
+    content: '';
+    width: 150px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #007dff;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.quote-box blockquote {
+    font-size: 26px;
+    min-height: 110px;
+}
+
+.quote-box blockquote::before, .quote-box blockquote::after {
+    content: '"';
+}
+
+.quote-box span {
+    display: block;
+    margin-top: 10px;
+    float: right;
+    position: relative;
+}
+
+.quote-box span::before {
+    content: '';
+    width: 20px;
+    height: 2px;
+    background-color: #007dff;
+    position: absolute;
+    top: 50%;
+    left: -30px;
+}
+
+.quote-box div {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.quote-box button {
+    background-color: #007dff;
+    color: #FFFFFF;
+    border-radius: 25px;
+    border: 1px solid #007dff;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    cursor: grab;
+    font-size: 15px;
+}
+
+.quote-box button:hover {
+    background-color: #005ec2;
+}
+
+.quote-box button:active {
+    cursor: grabbing;
+}
+
+.quote-box button img {
+    width: 35px;
+    margin-right: 10px;   
+}
+
+.quote-box button:nth-child(2) {
+    background: transparent;
+    color: #000000;
+}
+
+.quote-box button:nth-child(2):hover {
+    background: #dfdfdf;
+}
