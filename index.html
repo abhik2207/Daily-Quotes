@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=REM&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 <body>
     <div class="quote-box">
@@ -19,9 +20,11 @@
         <span id="author">
             Loading...
         </span>
-        <div>
-            <button onclick="getQuote(apiURL)">New Quote</button>
-            <button onclick="tweet()"><img src="twitter.png"> Tweet</button>
+        <div id="button-div">
+            <button onclick="getQuote(apiURL)"><i class="ri-chat-quote-fill"></i> New Quote</button>
+            <button onclick="tweet()"><i class="ri-twitter-fill"></i> Tweet</button>
+            <button onclick="copy()"><i class="ri-file-copy-line"></i> Copy</button>
+            <button onclick="speak()"><i class="ri-volume-up-line"></i> Speak</button>
         </div>
     </div>
 
